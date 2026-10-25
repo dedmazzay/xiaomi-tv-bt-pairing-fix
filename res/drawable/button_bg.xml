@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TV remote users must see which button has focus: blue when focused, grey otherwise. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#2F80ED" />
+            <stroke android:width="3dp" android:color="#FFFFFF" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#4A4A4A" />
+        </shape>
+    </item>
+</selector>

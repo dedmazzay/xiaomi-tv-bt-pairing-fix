@@ -47,8 +47,8 @@ public class MainActivity extends Activity {
 
         LinearLayout buttons = new LinearLayout(this);
         buttons.setOrientation(LinearLayout.HORIZONTAL);
-        mPrimary = new Button(this);
-        mSecondary = new Button(this);
+        mPrimary = button();
+        mSecondary = button();
         buttons.addView(mPrimary);
         buttons.addView(mSecondary);
         ((LinearLayout.LayoutParams) mSecondary.getLayoutParams()).leftMargin = dp(24);
@@ -127,6 +127,15 @@ public class MainActivity extends Activity {
             }
         }
         Toast.makeText(this, R.string.settings_not_found, Toast.LENGTH_LONG).show();
+    }
+
+    private Button button() {
+        Button b = new Button(this);
+        b.setBackgroundResource(R.drawable.button_bg);
+        b.setTextColor(0xFFFFFFFF);
+        b.setTextSize(18);
+        b.setPadding(dp(32), dp(12), dp(32), dp(12));
+        return b;
     }
 
     private int dp(int v) {
