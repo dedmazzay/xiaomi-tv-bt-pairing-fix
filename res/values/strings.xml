@@ -2,4 +2,15 @@
 <resources>
     <string name="app_name">Bluetooth pairing: remote OK fix</string>
     <string name="service_description">Works around a Xiaomi TV bug: in the Bluetooth pairing request dialog the remote\'s OK button presses \"Pair\". Does nothing on any other screen.</string>
+
+    <string name="status_on_title">✓ The fix is on</string>
+    <string name="status_on_body">In the \"Bluetooth pairing request\" dialog the remote\'s OK button now presses \"Pair\". BACK cancels pairing.\n\nThe fix works on its own, you can close this app.</string>
+    <string name="status_off_title">One step left: turn the fix on</string>
+    <string name="status_off_body">Android does not let an app switch this on by itself, so please do it once:\n\n1. Press \"Open settings\".\n2. Under \"Services\", select \"Bluetooth pairing: remote OK fix\".\n3. Turn it on and confirm with OK.\n4. Press BACK to return here.</string>
+    <string name="restricted_hint">If the switch is greyed out: Settings → Apps → Bluetooth pairing: remote OK fix → ⋮ → Allow restricted settings, then try again.</string>
+    <string name="button_open_settings">Open settings</string>
+    <string name="button_later">Later</string>
+    <string name="button_done">Done</string>
+    <string name="button_settings">Settings</string>
+    <string name="settings_not_found">Settings did not open. Go to Settings → Device Preferences → Accessibility manually.</string>
 </resources>

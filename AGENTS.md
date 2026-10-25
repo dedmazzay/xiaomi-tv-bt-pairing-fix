@@ -27,3 +27,15 @@ Xiaomi Mi TV P1 55″ (MiTV-MOOQ0), Android TV 10, сборка 4716 — 25.10.2
 - Модуль `com.xiaomi.android.tvsetup.partnercustomizer` обрабатывает кнопки пульта «Настройки» и
   «Источник» — не отключать.
 - В zsh не писать `"$VAR:r..."` в строках: `:r` — модификатор zsh.
+
+## v1.1.0 setup verification
+
+- Launcher status and Accessibility enable flow verified with D-pad on P1.
+- Xiaomi routes ACTION_ACCESSIBILITY_SETTINGS to a stub; use MainSettings with
+  string extra SUB_TYPE=NRT_SRC. Android requires manual service consent.
+- Physical USB installation is unverified (no USB drive attached). Media Player APK
+  support was confirmed in its source, not through an end-to-end USB test.
+- CX Explorer 2.8.1 install dialog traps remote focus; avoid as the primary USB path.
+- Force-stopping the app may disable its service. Reopen and enable again.
+- docs/pairing-dialog-en.png is an actual TV capture. TV restored to ru-RU after
+  capture; Button Mapper and PairOkService both enabled.
