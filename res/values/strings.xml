@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bluetooth pairing: remote OK fix</string>
+    <string name="service_description">Works around a Xiaomi TV bug: in the Bluetooth pairing request dialog the remote\'s OK button presses \"Pair\". Does nothing on any other screen.</string>
+</resources>
