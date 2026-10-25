@@ -2,4 +2,15 @@
 <resources>
     <string name="app_name">Bluetooth: OK с пульта</string>
     <string name="service_description">Исправляет ошибку Xiaomi: в окне запроса на подключение Bluetooth кнопка OK пульта нажимает «ОК». На других экранах ничего не меняет.</string>
+
+    <string name="status_on_title">✓ Исправление включено</string>
+    <string name="status_on_body">В окне «Запрос на подключение по Bluetooth» кнопка OK пульта теперь нажимает «ОК». Кнопка «Назад» отменяет подключение.\n\nИсправление работает само, приложение можно закрыть.</string>
+    <string name="status_off_title">Осталось одно действие: включить исправление</string>
+    <string name="status_off_body">Android не разрешает приложению включить это самому, поэтому сделайте это один раз:\n\n1. Нажмите «Открыть настройки».\n2. В разделе «Сервисы» выберите «Bluetooth: OK с пульта».\n3. Включите и подтвердите кнопкой «ОК».\n4. Нажмите «Назад», чтобы вернуться сюда.</string>
+    <string name="restricted_hint">Если переключатель серый: Настройки → Приложения → Bluetooth: OK с пульта → ⋮ → «Разрешить ограниченные настройки», затем попробуйте снова.</string>
+    <string name="button_open_settings">Открыть настройки</string>
+    <string name="button_later">Позже</string>
+    <string name="button_done">Готово</string>
+    <string name="button_settings">Настройки</string>
+    <string name="settings_not_found">Настройки не открылись. Откройте вручную: Настройки → Настройки устройства → Специальные возможности.</string>
 </resources>
