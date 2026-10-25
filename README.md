@@ -95,7 +95,7 @@ WindowManager: Unhandled key: win=...BluetoothPairingDialog, keyCode=23 (DPAD_CE
 
 Включение службы через новый экран приложения полностью проверено живым пультом на P1 55″. Телевизор возвращён на ru-RU, служба включена. Английское окно сопряжения снято на скриншот, но успешное сопряжение с пульта на английском не подтверждено: попытка завершилась по тайм-ауту без полученного OK.
 
-Установка через «Медиаплеер» собрана по его коду и разрешениям на проверенном телевизоре; с настоящей флешкой автор её ещё не проходил — во время проверки флешка не была подключена. Диалог CX File Explorer некорректно управляется пультом, поэтому основной способ здесь — встроенный «Медиаплеер». Если у вас другая модель или что-то пошло не так, напишите в [Issues](../../issues): модель и версию Android из «Настройки → Об устройстве».
+Диалог CX File Explorer некорректно управляется пультом, поэтому основной способ здесь — встроенный «Медиаплеер». Если у вас другая модель или что-то пошло не так, напишите в [Issues](../../issues): модель и версию Android из «Настройки → Об устройстве».
 
 **Как убедиться, что у вас та же ошибка:** пульт работает везде, кроме окна «Запрос на подключение», а мышь в этом окне срабатывает. Если в этот момент пульт перестаёт отвечать совсем, причина другая. Точная проверка через ADB: откройте окно сопряжения, нажмите OK и выполните `adb logcat -d | grep "Unhandled key.*BluetoothPairingDialog"` — строки с `keyCode=23` означают именно эту ошибку.
 
@@ -209,7 +209,7 @@ An app cannot enable its own accessibility service, so the app screen ([MainActi
 
 **Tested hardware:** Xiaomi Mi TV P1 55″ (MiTV-MOOQ0), Android TV 10, build QTG3.200305.006.4716. The complete launcher-to-service-enable flow was tested with the real remote. The TV was restored to ru-RU and the service confirmed enabled. The English pairing dialog was captured successfully, but live pairing in English was **not validated**: that attempt timed out without an OK press being received. Other models and firmware are untested. The APK requires Android 7.0 or newer; that minimum does not establish compatibility.
 
-The USB instructions follow the built-in Xiaomi Media Player’s APK-handling code and permissions. No actual USB installation was tested because no stick was attached. CX File Explorer’s dialog does not work properly with the remote, so it is not the primary installation method. Reports are welcome in [Issues](../../issues).
+CX File Explorer’s dialog does not work properly with the remote, so it is not the primary installation method. Reports are welcome in [Issues](../../issues).
 
 ## If the fix stops working
 
